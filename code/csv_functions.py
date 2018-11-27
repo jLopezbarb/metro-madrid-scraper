@@ -20,10 +20,7 @@ def _get_csv_rows(lines):
         for station in line.stations:
             data = dict((el, False) for el in headers)
             data['Estacion'] = station.name
-            if type(data['Lineas']) is list():
-                data['Lineas'].append(line.name)
-            else:
-                data['Lineas'] = [line.name]
+            data['Lineas'] = line.name
             data['Zona tarifaria'] = station.station_rate_zone
             data['Latitud'] = station.coord.lat
             data['Longitud'] = station.coord.long
