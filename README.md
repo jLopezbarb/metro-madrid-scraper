@@ -17,7 +17,7 @@ pip install -r requirements.txt
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install https://github.com/jLopezbarb/metro-madrid-scraper.git
+pip install git+https://github.com/jLopezbarb/metro-madrid-scraper.git
 ```
 
 ## Usage
