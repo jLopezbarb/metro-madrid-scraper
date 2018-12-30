@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.join(os.path.dirname(__file__), ".."))))
 from metro_madrid_scraper.spiders.download_coords import *
 from metro_madrid_scraper.csv_functions import *
 from metro_madrid_scraper.coord_file_functions import *
